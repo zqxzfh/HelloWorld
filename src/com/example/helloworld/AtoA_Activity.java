@@ -20,15 +20,11 @@ public class AtoA_Activity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.activity_ato_a_);
-		
-		//创建一个线性布局管理器
 		LinearLayout layout = new LinearLayout(this);
-		//设置该Activity显示layout
-		super.setContentView(layout);
+		super.setContentView(layout);                                                                 
 		layout.setOrientation(LinearLayout.VERTICAL);
-		//创建一个textview
 		final TextView show = new TextView(this);
-		//创建一个按钮
+		//create a button 
 		Button bn = new Button(this);
 		bn.setText(R.string.ok);
 		bn.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -87,26 +83,24 @@ public class AtoA_Activity extends ActionBarActivity {
 	
 	public class BookDetailFragment extends Fragment{
 		public static final String ITEM_ID = "item_id";
-		//保存该fragment显示的book对象
+		//save the object of this fragment
 		BookContent.Book book;
 		@Override
 		public void onCreate(Bundle savedInstanceState){
 			super.onCreate(savedInstanceState);
-			//如果启动该Fragment时包含了ITEM_ID参数
+			//if fragment contain this ITEM_ID
 			if(getArguments().containsKey(ITEM_ID)){
 				book = BookContent.ITEM_MAP.get(getArguments().getInt(ITEM_ID));
 			}
 		}
-		//重写该方法，该方法返回的View将作为Fragment显示的组件
+		//override this method ，this method return View as the module of Fragment
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_book_detail,
 					container, false);
 			if(book != null){
-				//让book_title文本框显示book对象的title属性
 				((TextView)rootView.findViewById(R.id.book_desc)).setText(book.desc);
-				//让book_desc文本框显示book对象的desc属性
 				((TextView)rootView.findViewById(R.id.book_desc)).setText(book.desc);
 			}
 			return rootView;

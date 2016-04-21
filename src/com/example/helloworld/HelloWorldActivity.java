@@ -40,37 +40,9 @@ public class HelloWorldActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-//	public void clickHandler(View source){
-//		TextView tv = (TextView)findViewById(R.id.show);
-//		tv.setText("Hello Android-"+ new java.util.Date());
-//		
-//	}
-//	private boolean checkSN(String userName,String sn){
-//		try{
-//			if((userName == null) || (userName.length() == 0))
-//				return false;
-//			if((sn == null) || (sn.length() != 16))
-//				return false;
-//			MessageDigest digest = MessageDigest.getInstance("MD5");
-//			digest.reset();
-//			digest.update(userName.getBytes());
-//			byte[] bytes = digest.digest();//采用MD5对用户名进行Hash
-//			String hexstr = toHexString(bytes,"");//将计算结果转换成字符串
-//			StringBuilder sb = new StringBuilder();
-//			for(int i=0;i<hexstr.length();i += 2 ){
-//				sb.append(hexstr.charAt(i));
-//			}
-//			String userSN = sb.toString();//计算出的SN
-//			if(!userSN.equalsIgnoreCase(sn))
-//				return false;
-//		}catch(NoSuchAlgorithmException e){
-//			e.printStackTrace();
-//			return false;
-//		}
-//		return true;
-//	}
+
 //	private static String toHexString(byte[] bytes, String separator) { 
-//		//转为十六进制 
+//		//16
 //	    StringBuilder hexString = new StringBuilder(); 
 //	    for (byte b : bytes) { 
 //	        String hex = Integer.toHexString(0xFF & b); 

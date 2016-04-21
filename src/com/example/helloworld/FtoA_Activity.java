@@ -24,8 +24,8 @@ public class FtoA_Activity extends Activity  {
 		Intent intent = getIntent();
 		String message = intent.getStringExtra("fanghua");
 		myMessage = (TextView)findViewById(R.id.ftoa_text1);
-		//Toast.makeText(this,"从f到a的跳转"+message,Toast.LENGTH_LONG).show();
-		myMessage.setText("从F到A"+message);
+		//Toast.makeText(this,"from f to a"+message,Toast.LENGTH_LONG).show();
+		myMessage.setText("from F to A"+message);
 		 
 
 	}

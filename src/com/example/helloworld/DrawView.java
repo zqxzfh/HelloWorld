@@ -11,7 +11,7 @@ import android.view.View;
 public class DrawView extends View {
 	public float currentX = 40;
 	public float currentY = 50;
-	//定义并创建画笔
+	//create a pen
 	Paint p = new Paint();
 	public DrawView(Context context) {
 		super(context);
@@ -26,12 +26,12 @@ public class DrawView extends View {
 		p.setColor(Color.RED);
 		canvas.drawCircle(currentX, currentY, 15, p);
 	}
-	//为该组件的触碰事件重写事件处理方法
+	//override event handle method--touch method for this module 
 	@Override
 	public boolean onTouchEvent(MotionEvent event){
 		currentX = event.getX();
 		currentY = event.getY();
-		//通知当前组件重绘自己
+		// redraw itself
 		invalidate();
 		return true;
 	}

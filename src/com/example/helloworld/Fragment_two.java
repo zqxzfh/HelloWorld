@@ -29,7 +29,7 @@ public class Fragment_two extends Fragment
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Toast.makeText(getActivity(), "·¼»ª", Toast.LENGTH_LONG).show();		
+			Toast.makeText(getActivity(), "fanghua", Toast.LENGTH_LONG).show();		
 			Intent intent = new Intent(getActivity(),AtoA_Activity.class);
 			getActivity().startActivity(intent);
 			

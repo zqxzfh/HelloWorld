@@ -24,15 +24,15 @@ public class BookContent {
 			return title;
 		}
 	}
-		//Ê¹ÓÃList¼¯ºÏ¼ÇÂ¼ÏµÍ³Ëù°üº¬µÄBook¶ÔÏó
+		//use List to record book objects
 		public static List<Book> ITEMS = new ArrayList<Book>();
-		//Ê¹ÓÃMap¼¯ºÏ¼ÇÂ¼ÏµÍ³Ëù°üº¬µÄBook¶ÔÏó
+		//use Map to record book objects
 		public static Map<Integer, Book> ITEM_MAP = new HashMap<Integer,Book>();
 		static{
-			//Ê¹ÓÃ¾²Ì¬³õÊ¼»¯´úÂë£¬½«book¶ÔÏóÌí¼Óµ½List¼¯ºÏ£¬map¼¯ºÏÖĞ
-			addItem(new Book(1, "·è¿ñjava½²Òå", "Ò»±¾È«ÃæÉîÈëµÄjavaÑ§Ï°Í¼Êé£¬ÒÑ±»¶à¼Ò¸ßĞ£Ñ¡×ö½Ì²Ä¡£"));
-			addItem(new Book(2,"·è¿ñAndroid½²Òå","AndroidÑ§Ï°ÕßµÄÊ×Ñ¡Í¼Êé£¬³£ÄêÕ¼¾İ¾©¶«£¬µ±µ±£¬"+"ÑÇÂíÑ·3´óÍøÕ¾AndroidÏúÁ¿ÅÅĞĞ°ñµÄÊ×°ñ"));
-			addItem(new Book(3, "ÇáÁ¿¼¶java EEÆóÒµÓ¦ÓÃÊµÕ½", "È«Ãæ½éÉÜjava EE¿ª·¢µÄStruts 2£¬Spring 3,Hibernate 4 ¿ò¼Ü"));
+			//use static method to initialize
+			addItem(new Book(1, "ç–¯ç‹‚javaè®²ä¹‰", "ä¸€æœ¬å…¨é¢æ·±å…¥çš„javaå­¦ä¹ å›¾ä¹¦ï¼Œå·²è¢«å¤šå®¶é«˜æ ¡é€‰åšæ•™æã€‚"));
+			addItem(new Book(2,"ç–¯ç‹‚Androidè®²ä¹‰","Androidå­¦ä¹ è€…çš„é¦–é€‰å›¾ä¹¦ï¼Œå¸¸å¹´å æ®äº¬ä¸œï¼Œå½“å½“ï¼Œ"+"äºšé©¬é€Š3å¤§ç½‘ç«™Androidé”€é‡æ’è¡Œæ¦œçš„é¦–æ¦œ"));
+			addItem(new Book(3, "è½»é‡çº§java EEä¼ä¸šåº”ç”¨å®æˆ˜", "å…¨é¢ä»‹ç»java EEå¼€å‘çš„Struts 2ï¼ŒSpring 3,Hibernate 4 æ¡†æ¶"));
 		}
 		private static void addItem(Book book){
 			ITEMS.add(book);

@@ -28,9 +28,9 @@ public class contentFragment extends Fragment
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Toast.makeText(getActivity(), "芳华", Toast.LENGTH_LONG).show();		
+			Toast.makeText(getActivity(), "fanghua", Toast.LENGTH_LONG).show();		
 			Intent intent = new Intent(getActivity(),FtoA_Activity.class);
-			intent.putExtra("fanghua","成功了");
+			intent.putExtra("fanghua","success");
 			getActivity().startActivity(intent);
 			
 		}
