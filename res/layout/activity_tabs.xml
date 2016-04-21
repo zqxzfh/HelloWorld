@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context="com.example.helloworld.TabsActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/viewpager"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"/>  
+    
+    <LinearLayout  
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/tab1" 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+          >
+         <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message" 
+                android:textSize="18sp"
+                android:textColor="#acacac"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/tab2" 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:background="#00ff00"
+          >
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacter" 
+                android:textSize="18sp"
+                android:textColor="#acacac"
+                android:layout_centerInParent="true"
+                /> 
+        </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/tab3" 
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:background="#ffff00"
+          >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dynamic" 
+                android:textSize="18sp"
+                android:textColor="#acacac"
+                android:layout_centerInParent="true"
+                /> 
+        </RelativeLayout>
+    
+        
+    </LinearLayout>
+
+</RelativeLayout>
