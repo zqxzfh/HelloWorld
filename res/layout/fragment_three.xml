@@ -14,13 +14,13 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="第三个" />
+        android:text="the third" />
   
     <TextView  
         android:layout_width="fill_parent"  
         android:layout_height="fill_parent"  
         android:gravity="center"  
-        android:text="使用Fragment做主面板"  
+        android:text="use Fragment for main panel"  
         android:textSize="20sp"  
         android:textStyle="bold" />
 

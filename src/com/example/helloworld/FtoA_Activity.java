@@ -26,7 +26,7 @@ public class FtoA_Activity extends Activity  {
 		myMessage = (TextView)findViewById(R.id.ftoa_text1);
 		//Toast.makeText(this,"from f to a"+message,Toast.LENGTH_LONG).show();
 		myMessage.setText("from F to A"+message);
-		 
+		
 
 	}
 

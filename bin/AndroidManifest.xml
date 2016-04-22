@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helloworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- <uses-permission.../>为程序本身声明权限 -->
+    <!-- 声明该应用本身需要打电话的权限 -->
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE"/> -->
+    <!-- 声明该应用本身需要发短信的权限 -->
+    <!-- <uses-permission android:name="android.permission.SEND-SMS"/> -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HelloWorldActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- 指定该activity是程序的入口 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 指定加载该应用时运行该activity -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FtoA_Activity"
+            android:label="@string/title_activity_fto_a_" >
+        </activity>
+        <activity
+            android:name=".AtoA_Activity"
+            android:label="@string/title_activity_ato_a_" >
+        </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name=".NewMainActivity"
+            android:label="@string/title_activity_new_main" >
+        </activity>
+    </application>
+
+</manifest>

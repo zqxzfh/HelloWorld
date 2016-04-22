@@ -15,8 +15,8 @@
         android:layout_width="fill_parent"  
         android:layout_height="fill_parent"  
         android:gravity="center"  
-        android:text="我不是微信"  
-        android:textColor="#fff"  
+        android:text="i am not weixin"  
+        android:textColor="#000"  
         android:textSize="20sp"  
         android:textStyle="bold" />  
   

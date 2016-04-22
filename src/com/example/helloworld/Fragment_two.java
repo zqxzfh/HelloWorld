@@ -30,7 +30,7 @@ public class Fragment_two extends Fragment
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			Toast.makeText(getActivity(), "fanghua", Toast.LENGTH_LONG).show();		
-			Intent intent = new Intent(getActivity(),AtoA_Activity.class);
+			Intent intent = new Intent(getActivity(),NewMainActivity.class);
 			getActivity().startActivity(intent);
 			
 		}

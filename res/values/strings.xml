@@ -7,8 +7,10 @@
     <string name="title_activity_fto_a_">FtoA_Activity</string>
     <string name="title_activity_ato_a_">AtoA_Activity</string>
     <string name="title_activity_tabs">TabsActivity</string>
-    <string name="message">消息</string>
-    <string name="contacter">联系人</string>
-    <string name="dynamic">动态</string>
-    <string name="ok">按钮</string>
+    <string name="message">message</string>
+    <string name="contacter">container</string>
+    <string name="dynamic">dynamic</string>
+    <string name="ok">button</string>
+    <string name="title_activity_new_main">NewMainActivity</string>
+
 </resources>
